@@ -18,7 +18,7 @@ const SecondsCounter = (props) => {
   return (
     <div className="counter" style={myStyles}>
       <div className="clock">
-        <i class="far fa-clock"></i>
+        <i className="far fa-clock"></i>
       </div>
       <div className="six">{props.digit6 % 10}</div>
       <div className="five">{props.digit5 % 10}</div>
@@ -30,7 +30,7 @@ const SecondsCounter = (props) => {
   );
 };
 
-SecondsCounter.PropTypes = {
+SecondsCounter.propTypes = {
   digit6: PropTypes.number,
   digit5: PropTypes.number,
   digit4: PropTypes.number,
